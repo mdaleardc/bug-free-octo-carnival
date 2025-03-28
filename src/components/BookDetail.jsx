@@ -16,7 +16,6 @@ export default async function BookDetail({ id }) {
     
     const data = await response.json();
     const book = data?.book || {};
-    console.log("book-detail :", book);
     
     return (
           <div className="book-detail w-full h-[80vh]">

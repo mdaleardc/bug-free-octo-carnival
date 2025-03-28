@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.myanmarbookshub.com
+
+# Sitemaps
+Sitemap: https://www.myanmarbookshub.com/sitemap.xml
