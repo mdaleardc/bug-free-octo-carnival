@@ -76,6 +76,7 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
         />
         <Script
+          id="google-analystics-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
