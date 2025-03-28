@@ -45,7 +45,7 @@ const AllBooks = () => {
           ))}
         </div>
       ) : (
-        <p className="text-center text-gray-500">No books found.</p>
+        <p className="text-center text-gray-50">No books found.</p>
       )}
 
       {visibleBooks < books.length && (
