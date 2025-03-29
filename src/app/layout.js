@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Myanmar Books Hub",
-  description: "Myanmar Books Hub - A comprehensive digital library featuring Myanmar New Curriculum Textbooks and Answer-guides for grades 1 to 12, along with Islamic books and a wide range of educational and general interest books for readers of all ages."
+  description: "Myanmar Books Hub – A comprehensive digital library offering Myanmar New Curriculum Textbooks, Answer Guides (Learners' Choice | အဖြေစုံ | အထူးထုတ် | ရွှေလက်ဆောင် | ကံ့ကော်ရိပ်), Past Exam Papers (PDF) for Grades 1–12, plus a diverse collection of Islamic books, educational resources, and general-interest books for all ages."
 };
 
 export default function RootLayout({ children }) {
