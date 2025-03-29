@@ -2,8 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Script from "next/script";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,13 +26,14 @@ export default function RootLayout({ children }) {
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <meta name="google-site-verification" content="-vNXOHJzAJLadGqgV8LjMX5BmcBOz63CISuLHuEp2x4" />
     <link rel="canonical" href="https://myanmarbookshub.netlify.app" />
-        
+    
     </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
       <Navbar />
         {children}
       <Footer />
       </body>
+      <GoogleTagManager gtmId="GTM-TGXD779X" />
       <GoogleAnalytics gaId="G-B4F3FMW431" />
     </html>
   );
