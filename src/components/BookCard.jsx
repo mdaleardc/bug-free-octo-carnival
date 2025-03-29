@@ -2,6 +2,7 @@ import Link from "next/link";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import Button from "@/components/Button"
+import Image from "next/image"
 
 dayjs.extend(relativeTime);
 
@@ -10,11 +11,13 @@ const BookCard = ({ book }) => {
     <div className="rounded-xl shadow-md text-center bg-zinc-300 transform transition-transform duration-300 p-1 hover:scale-x-105 hover:shadow-lg h-full relative">
     <div className='mb-8'>
       <Link href={`/book-detail/${book?._id}`}>
-        <img
+        <Image
           src={book?.thumbnailUrl}
           alt="book's thumbnail"
           className="rounded-lg mx-auto w-full h-[200px] object-cover"
           loading="lazy"
+          width="100"
+          height="150"
         />
       </Link>
 

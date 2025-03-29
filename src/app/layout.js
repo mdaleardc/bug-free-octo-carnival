@@ -25,6 +25,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
     <head>
     <meta name="google-site-verification" content="-vNXOHJzAJLadGqgV8LjMX5BmcBOz63CISuLHuEp2x4" />
+    <link rel="canonical" href="https://myanmarbookshub.netlify.app" />
+        
     </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
       <Navbar />

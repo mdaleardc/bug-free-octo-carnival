@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useRouter } from 'next/navigation';
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
-import Button from "@/components/Button"
+import Button from "@/components/Button";
+import Image from "next/image";
 
 dayjs.extend(relativeTime);
 
@@ -12,10 +13,12 @@ const BookDetailCard = ({ book }) => {
     <div className="w-4/5 sm:w-3/5 xl:w-2/5 h-fit mx-auto my-5 rounded-xl shadow-md text-center bg-zinc-200 transform transition-transform duration-300 p-1 hover:shadow-lg text-center">
       {/* Book Thumbnail */}
       <div className="flex flex-col items-center">
-        <img
+        <Image
           src={book.thumbnailUrl}
           alt="Book Thumbnail"
-          className="rounded-lg shadow-md w-full h-[450px] object-cover"
+          className="rounded-lg shadow-md w-full h-[400px] object-cover"
+          width="100"
+          height='150'
         />
         <h2 className="mt-4 text-3xl font-bold text-gray-800">{book.subject.replace("Myanmar", "Myanmasar").replace(/_/g, " ")}</h2>
         <p className="text-lg text-gray-600">{book.grade.replace(/_/, ": ")}</p>

@@ -21,15 +21,13 @@ const FilterGrade = () => {
 
   return (
     <div className="bg-gray-850 text-gray-200 p-2 flex flex-wrap gap-2 items-center">
-        <h3 className="text-lg font-semibold text-white">Filter by Grades</h3>
-
-     <label htmlFor="grade" className="text-white">
+     <label htmlFor="grade" className="text-lg font-semibold text-white">
+     Filter by Grade
 </label>
 <select
   id="grade"
   className="outline-none p-2 bg-gray-800 text-white border border-gray-600 rounded-md"
-  onChange={handleGradeChange}
->
+  onChange={handleGradeChange}>
   <option>Select Grade</option>
   {grades.map((grade, index) => (
     <option key={index} value={grade}>
