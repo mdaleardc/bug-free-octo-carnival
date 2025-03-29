@@ -15,7 +15,6 @@ const BookCard = ({ book }) => {
           src={book?.thumbnailUrl}
           alt="book's thumbnail"
           className="rounded-lg mx-auto w-full h-[200px] object-cover"
-          loading="lazy"
           width="100"
           height="150"
         />
