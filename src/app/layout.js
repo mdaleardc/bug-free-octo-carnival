@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     <head>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <meta name="google-site-verification" content="-vNXOHJzAJLadGqgV8LjMX5BmcBOz63CISuLHuEp2x4" />
     <link rel="canonical" href="https://myanmarbookshub.netlify.app" />
         
