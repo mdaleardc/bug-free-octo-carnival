@@ -2,8 +2,5 @@
 User-agent: *
 Allow: /
 
-# Host
-Host: https://myanmarbookshub.netlify.app
-
 # Sitemaps
 Sitemap: https://myanmarbookshub.netlify.app/sitemap.xml
