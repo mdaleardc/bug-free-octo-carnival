@@ -1,6 +1,6 @@
 // next-sitemap.js
 module.exports = {
-  siteUrl: 'https://www.myanmarbookshub.com',
+  siteUrl: 'https://myanmarbookshub.netlify.app',
   generateRobotsTxt: true, // Optional: to generate robots.txt
   sitemapSize: 7000,
   changefreq: 'daily', // You can set different frequency for different pages.

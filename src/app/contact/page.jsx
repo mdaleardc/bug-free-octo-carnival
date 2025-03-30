@@ -18,26 +18,23 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Simple form validation
     if (!formData.name || !formData.email || !formData.message) {
       setStatus('Please fill in all fields.');
       return;
     }
 
-    try {
-      // For now, just log the data and show a success message
-      // Replace this with your API call to send the contact form data
-      console.log(formData);
-      setStatus('Message sent successfully!');
+    // Create a mailto link with form data
+    const mailtoLink = `mailto:ismailmd.code@gmail.com?subject=Message from ${encodeURIComponent(formData.name)}&body=Name: ${encodeURIComponent(formData.name)}%0D%0AEmail: ${encodeURIComponent(formData.email)}%0D%0AMessage: ${encodeURIComponent(formData.message)}`;
 
-      // Reset the form data
-      setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
-      setStatus('Failed to send message. Please try again.');
-    }
+    // Open the mail client
+    window.location.href = mailtoLink;
+
+    // Reset the form
+    setFormData({ name: '', email: '', message: '' });
+    setStatus('Redirecting to email client...');
   };
 
   return (
@@ -83,7 +80,7 @@ const Contact = () => {
           />
         </div>
         {status && (
-          <div className={`mt-4 text-center ${status.includes('success') ? 'text-green-500' : 'text-red-500'}`}>
+          <div className={`mt-4 text-center ${status.includes('Redirecting') ? 'text-blue-500' : 'text-red-500'}`}>
             {status}
           </div>
         )}

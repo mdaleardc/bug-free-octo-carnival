@@ -1,3 +1,4 @@
+//app/api/upload/route.js
 import { connectDB } from "@/lib/mongodb";
 import Book from "@/lib/models/Book";
 import { NextResponse } from "next/server";
@@ -6,7 +7,7 @@ import { NextResponse } from "next/server";
 export async function POST(req) {
   try {
     await connectDB();
-    const { grade, subject, pdfType, categories, specificBookName, pdfUrl } = await req.json();
+    const { grade, subject, pdfType, categories, specificBookName, pdfUrl, thumbnailUrl } = await req.json();
 
     const book = await Book.create({
       title: `${grade} ${subject} ${pdfType} ${specificBookName}`,
@@ -15,6 +16,7 @@ export async function POST(req) {
       pdfType,
       categories,
       specificBookName,
+      thumbnailUrl,
       pdfUrl,
     });
 
