@@ -16,7 +16,23 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Myanmar Books Hub",
-  description: "Myanmar Books Hub – A comprehensive digital library offering Myanmar New Curriculum Textbooks, Answer Guides (Learners' Choice | အဖြေစုံ | အထူးထုတ် | ရွှေလက်ဆောင် | ကံ့ကော်ရိပ်), Past Exam Papers (PDF) for Grades 1–12, plus a diverse collection of Islamic books, educational resources, and general-interest books for all ages."
+  description: "Myanmar Books Hub – A comprehensive digital library offering Myanmar New Curriculum Textbooks, Answer Guides (Learners' Choice | အဖြေစုံ | အထူးထုတ် | ရွှေလက်ဆောင် | ကံ့ကော်ရိပ်), Past Exam Papers (PDF) for Grades 1–12, plus a diverse collection of Islamic books, educational resources, and general-interest books for all ages.",
+  openGraph: {
+    title: "Myanmar Books Hub",
+    description: "A comprehensive digital library with Myanmar New Curriculum Textbooks, Answer Guides, Past Exam Papers (PDF) for Grades 1–12, Islamic books, and more.",
+    url: "https://myanmarbookshub.netlify.app",
+    siteName: "Myanmar Books Hub",
+    images: [
+      {
+        url: "https://myanmarbookshub.netlify.app/og-image.jpg", // Replace with your actual OG image URL
+        width: 1200,
+        height: 630,
+        alt: "Myanmar Books Hub - Digital Library",
+      },
+    ],
+    type: "website",
+    locale: "en_US",
+  },
 };
 
 export default function RootLayout({ children }) {
