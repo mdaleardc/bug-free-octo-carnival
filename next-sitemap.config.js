@@ -4,5 +4,5 @@ module.exports = {
   generateRobotsTxt: true, // Optional: to generate robots.txt
   sitemapSize: 7000,
   changefreq: 'daily', // You can set different frequency for different pages.
-  priority: 0.7, // Adjust according to importance.
+  priority: 1.0, // Adjust according to importance.
 };

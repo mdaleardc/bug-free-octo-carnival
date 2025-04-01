@@ -1,6 +1,7 @@
 # *
 User-agent: *
 Allow: /
+Disallow: https://myanmarbookshub.netlify.app/upload-55429/sub-secret-55529
 
 # Sitemaps
 Sitemap: https://myanmarbookshub.netlify.app/sitemap.xml
